@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Show me number of symptomatic cases by the following age groups: < 1, 1-5, 6-18, 19-64, > 65, for humans. -->
+<apollo:SimulatorCountOutputSpecificationListElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd" xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
+    <apollo:SimulatorCountOutputSpecification>
+        <apollo:speciesToCount>9609</apollo:speciesToCount>
+        <apollo:temporalGranularity>eachSimulationTimestep</apollo:temporalGranularity>
+        <apollo:spatialGranularity>none</apollo:spatialGranularity>
+        <apollo:diseaseOutcome>symptomatic</apollo:diseaseOutcome>
+        <apollo:otherVariables>
+            <apollo:variable>ageRange</apollo:variable>
+            <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+                <apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+                <apollo:lowerBound>
+                    <apollo:infiniteBoundary>negativeInfinity</apollo:infiniteBoundary>
+                </apollo:lowerBound>
+                <apollo:upperBound>
+                    <apollo:finiteBoundary>1</apollo:finiteBoundary>
+                </apollo:upperBound>
+            </apollo:categories>
+            <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+                <apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+                <apollo:lowerBound>
+                    <apollo:finiteBoundary>1</apollo:finiteBoundary>
+                </apollo:lowerBound>
+                <apollo:upperBound>
+                    <apollo:finiteBoundary>5</apollo:finiteBoundary>
+                </apollo:upperBound>
+            </apollo:categories>
+            <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+                <apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+                <apollo:lowerBound>
+                    <apollo:finiteBoundary>6</apollo:finiteBoundary>
+                </apollo:lowerBound>
+                <apollo:upperBound>
+                    <apollo:finiteBoundary>18</apollo:finiteBoundary>
+                </apollo:upperBound>
+            </apollo:categories>
+            <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+                <apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+                <apollo:lowerBound>
+                    <apollo:finiteBoundary>19</apollo:finiteBoundary>
+                </apollo:lowerBound>
+                <apollo:upperBound>
+                    <apollo:finiteBoundary>64</apollo:finiteBoundary>
+                </apollo:upperBound>
+            </apollo:categories>
+            <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+                <apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+                <apollo:lowerBound>
+                    <apollo:finiteBoundary>64</apollo:finiteBoundary>
+                </apollo:lowerBound>
+                <apollo:upperBound>
+                    <apollo:infiniteBoundary>positiveInfinity</apollo:infiniteBoundary>
+                </apollo:upperBound>
+            </apollo:categories>
+        </apollo:otherVariables>
+    </apollo:SimulatorCountOutputSpecification>
+</apollo:SimulatorCountOutputSpecificationListElement>

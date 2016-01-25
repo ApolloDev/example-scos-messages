@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Show me the number of people that died from the disease, and the total number of people that had the disease, so that I can calculate the case fatality rate. -->
+
+<!-- Note: We need to ask for two output files, one output file that shows the number of deaths, and another output file that counts the total number of people that 
+     had the disease -->
+<apollo:SimulatorCountOutputSpecificationListElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd" xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
+    <!-- output request 1 -->
+    <apollo:SimulatorCountOutputSpecification>
+        <apollo:speciesToCount>9609</apollo:speciesToCount>
+        <apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
+        <apollo:spatialGranularity>none</apollo:spatialGranularity>
+        <apollo:diseaseOutcome>death</apollo:diseaseOutcome>
+    </apollo:SimulatorCountOutputSpecification>
+    <!-- output request 2 -->
+    <apollo:SimulatorCountOutputSpecification>
+        <apollo:speciesToCount>9609</apollo:speciesToCount>
+        <apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
+        <apollo:spatialGranularity>none</apollo:spatialGranularity>
+        <apollo:infectionState>latent</apollo:infectionState>
+    </apollo:SimulatorCountOutputSpecification>
+</apollo:SimulatorCountOutputSpecificationListElement>

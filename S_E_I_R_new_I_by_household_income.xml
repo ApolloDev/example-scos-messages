@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- User Request #4: Show me S, E, I, R, incidence and vaccination counts by household median income. -->
+
+<!-- Note: This requires 2 messages as we are counting two different things." -->
+<apollo:SimulatorCountOutputSpecificationListElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd" xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
+    <!-- Message 1, getting human counts -->
+    <apollo:SimulatorCountOutputSpecification>
+        <apollo:speciesToCount>9606</apollo:speciesToCount>
+        <apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
+        <apollo:spatialGranularity>none</apollo:spatialGranularity>
+        <apollo:infectionState>susceptible</apollo:infectionState>
+        <apollo:infectionState>latent</apollo:infectionState>
+        <apollo:infectionState>infectious</apollo:infectionState>
+        <apollo:infectionState>recovered</apollo:infectionState>
+        <apollo:infectionState>newly_sick</apollo:infectionState>
+        <apollo:otherVariables>
+            <apollo:variable>measuredQuantityRange</apollo:variable>
+            <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+                <apollo:unitOfMeasure>dollars</apollo:unitOfMeasure>
+                <apollo:lowerBound>
+                    <apollo:infiniteBoundary>negativeInfinity</apollo:infiniteBoundary>
+                </apollo:lowerBound>
+                <apollo:upperBound>
+                    <apollo:finiteBoundary>20000</apollo:finiteBoundary>
+                </apollo:upperBound>
+            </apollo:categories>
+            <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+                <apollo:unitOfMeasure>dollars</apollo:unitOfMeasure>
+                <apollo:lowerBound>
+                    <apollo:finiteBoundary>20000</apollo:finiteBoundary>
+                </apollo:lowerBound>
+                <apollo:upperBound>
+                    <apollo:finiteBoundary>40000</apollo:finiteBoundary>
+                </apollo:upperBound>
+            </apollo:categories>
+            <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+                <apollo:unitOfMeasure>dollars</apollo:unitOfMeasure>
+                <apollo:lowerBound>
+                    <apollo:finiteBoundary>40000</apollo:finiteBoundary>
+                </apollo:lowerBound>
+                <apollo:upperBound>
+                    <apollo:infiniteBoundary>positiveInfinity</apollo:infiniteBoundary>
+                </apollo:upperBound>
+            </apollo:categories>
+        </apollo:otherVariables>
+    </apollo:SimulatorCountOutputSpecification>
+    <!-- Message 2, getting vaccine counts -->
+    <apollo:SimulatorCountOutputSpecification>
+        <apollo:thingsToCount>vaccinations</apollo:thingsToCount>
+        <apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
+        <apollo:spatialGranularity>none</apollo:spatialGranularity>
+        <apollo:otherVariables>
+            <apollo:variable>measuredQuantityRange</apollo:variable>
+            <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+                <apollo:unitOfMeasure>dollars</apollo:unitOfMeasure>
+                <apollo:lowerBound>
+                    <apollo:infiniteBoundary>negativeInfinity</apollo:infiniteBoundary>
+                </apollo:lowerBound>
+                <apollo:upperBound>
+                    <apollo:finiteBoundary>20000</apollo:finiteBoundary>
+                </apollo:upperBound>
+            </apollo:categories>
+            <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+                <apollo:unitOfMeasure>dollars</apollo:unitOfMeasure>
+                <apollo:lowerBound>
+                    <apollo:finiteBoundary>20000</apollo:finiteBoundary>
+                </apollo:lowerBound>
+                <apollo:upperBound>
+                    <apollo:finiteBoundary>40000</apollo:finiteBoundary>
+                </apollo:upperBound>
+            </apollo:categories>
+            <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+                <apollo:unitOfMeasure>dollars</apollo:unitOfMeasure>
+                <apollo:lowerBound>
+                    <apollo:finiteBoundary>40000</apollo:finiteBoundary>
+                </apollo:lowerBound>
+                <apollo:upperBound>
+                    <apollo:infiniteBoundary>positiveInfinity</apollo:infiniteBoundary>
+                </apollo:upperBound>
+            </apollo:categories>
+        </apollo:otherVariables>
+    </apollo:SimulatorCountOutputSpecification>
+</apollo:SimulatorCountOutputSpecificationListElement>

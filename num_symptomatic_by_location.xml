@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Show me the number of symptomatic, stratified by location, over time. -->
+<apollo:SimulatorCountOutputSpecificationListElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd" xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
+    <!-- output request 1 -->
+    <apollo:SimulatorCountOutputSpecification>
+        <apollo:speciesToCount>9609</apollo:speciesToCount>
+        <apollo:temporalGranularity>eachSimulationTimestep</apollo:temporalGranularity>
+        <apollo:spatialGranularity>admin2</apollo:spatialGranularity>
+        <apollo:diseaseOutcome>symptomatic</apollo:diseaseOutcome>
+    </apollo:SimulatorCountOutputSpecification>
+</apollo:SimulatorCountOutputSpecificationListElement>

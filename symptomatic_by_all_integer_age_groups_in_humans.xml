@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Show me number of symptomatic cases by all integer ages, for humans. -->
+<apollo:SimulatorCountOutputSpecificationListElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd" 
+	xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
+	<apollo:SimulatorCountOutputSpecification>
+		<apollo:speciesToCount>9609</apollo:speciesToCount>
+		<apollo:temporalGranularity>eachSimulationTimestep</apollo:temporalGranularity>
+		<apollo:spatialGranularity>none</apollo:spatialGranularity>
+		<apollo:diseaseOutcome>symptomatic</apollo:diseaseOutcome>
+		<apollo:otherVariables>
+			<apollo:variable>measuredQuantityRange</apollo:variable>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:infiniteBoundary>negativeInfinity</apollo:infiniteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>1</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>1</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>2</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>2</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>3</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>3</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>4</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>4</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>5</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>5</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>6</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>6</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>7</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>7</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>8</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>8</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>9</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>9</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>10</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>10</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>11</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>11</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>12</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>12</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>13</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>13</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>14</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>14</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>15</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>15</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>16</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>16</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>17</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>17</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>18</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>18</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>19</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>19</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>20</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>20</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>21</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>21</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>22</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>22</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>23</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>23</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>24</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>24</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>25</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>25</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>26</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>26</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>27</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>27</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>28</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>28</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>29</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>29</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>30</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>30</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>31</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>31</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>32</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>32</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>33</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>33</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>34</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>34</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>35</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>35</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>36</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>36</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>37</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>37</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>38</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>38</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>39</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>39</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>40</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>40</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>41</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>41</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>42</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>42</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>43</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>43</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>44</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>44</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>45</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>45</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>46</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>46</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>47</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>47</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>48</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>48</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>49</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>49</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>50</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>50</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>51</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>51</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>52</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>52</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>53</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>53</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>54</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>54</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>55</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>55</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>56</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>56</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>57</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>57</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>58</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>58</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>59</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>59</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>60</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>60</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>61</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>61</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>62</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>62</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>63</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>63</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>64</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>64</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>65</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>65</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>66</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>66</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>67</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>67</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>68</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>68</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>69</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>69</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>70</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>70</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>71</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>71</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>72</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>72</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>73</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>73</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>74</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>74</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>75</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>75</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>76</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>76</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>77</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>77</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>78</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>78</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>79</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>79</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>80</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>80</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>81</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>81</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>82</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>82</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>83</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>83</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>84</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>84</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>85</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>85</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>86</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>86</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>87</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>87</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>88</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>88</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>89</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>89</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>90</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>90</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>91</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>91</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>92</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>92</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>93</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>93</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>94</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>94</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>95</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>95</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>96</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>96</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>97</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>97</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>98</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>98</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:finiteBoundary>99</apollo:finiteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
+				<apollo:unitOfMeasure>years</apollo:unitOfMeasure>
+				<apollo:lowerBound>
+					<apollo:finiteBoundary>99</apollo:finiteBoundary>
+				</apollo:lowerBound>
+				<apollo:upperBound>
+					<apollo:infiniteBoundary>positiveInfinity</apollo:infiniteBoundary>
+				</apollo:upperBound>
+			</apollo:categories>
+		</apollo:otherVariables>
+	</apollo:SimulatorCountOutputSpecification>
+</apollo:SimulatorCountOutputSpecificationListElement>
