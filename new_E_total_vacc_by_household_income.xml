@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- User Request #4: Show me S, E, I, R, incidence and vaccination counts by household median income. -->
+<!-- User Request:  Show me the number of people infected and number of people vaccinated 
+                    for the whole simulation by household median income. -->
 
-<!-- Note: This requires 2 messages as we are counting two different things." -->
-<apollo:SimulatorCountOutputSpecificationListElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd" xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
+<!-- Note: This requires 2 messages as we are counting two different "things." -->
+<apollo:SimulatorCountOutputSpecificationListElement
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd" 
+    xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
     <!-- Message 1, getting human counts -->
     <apollo:SimulatorCountOutputSpecification>
         <apollo:speciesToCount>9606</apollo:speciesToCount>
         <apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
         <apollo:spatialGranularity>none</apollo:spatialGranularity>
-        <apollo:infectionState>newly_exposed</apollo:infectionState>
+        <apollo:infectionState>newly_sick</apollo:infectionState>
         <apollo:otherVariables>
             <apollo:variable>householdMedianIncome</apollo:variable>
             <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">

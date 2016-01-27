@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- User Request #4: Show me S, E, I, R, incidence and vaccination counts by household median income. -->
+<!-- User Request: Show me S, E, I, R, incidence and vaccination counts over time. 
 
-<!-- Note: This requires 2 messages as we are counting two different things." -->
-<apollo:SimulatorCountOutputSpecificationListElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd" xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
+    What the user really wants:
+    For each time step, show me the total number of people that are susceptible at the end of the time step,
+    the total number of people that are exposed at the end of the time step, the total number of people that 
+    are infectious at the end of the time step, the total number of people that are recovered at the end of 
+    the time step, the number of people that became newly exposed during the time step, and the number of 
+    people that were vaccinated during the time step.
+-->
+
+<!-- Note: This requires 2 messages as we are counting two different "things." -->
+<apollo:SimulatorCountOutputSpecificationListElement
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd"
+    xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
     <!-- Message 1, getting human counts -->
     <apollo:SimulatorCountOutputSpecification>
         <apollo:speciesToCount>9606</apollo:speciesToCount>
-        <apollo:temporalGranularity>eachSimulatorTimeStep</apollo:temporalGranularity>
+        <apollo:temporalGranularity>eachSimulationTimestep</apollo:temporalGranularity>
         <apollo:spatialGranularity>none</apollo:spatialGranularity>
         <apollo:infectionState>susceptible</apollo:infectionState>
-        <apollo:infectionState>exposed</apollo:infectionState>
+        <apollo:infectionState>latent</apollo:infectionState>
         <apollo:infectionState>infectious</apollo:infectionState>
         <apollo:infectionState>recovered</apollo:infectionState>
-        <apollo:infectionState>newly_exposed</apollo:infectionState>
+        <apollo:infectionState>newly_sick</apollo:infectionState>
     </apollo:SimulatorCountOutputSpecification>
     <!-- Message 2, getting vaccine counts -->
     <apollo:SimulatorCountOutputSpecification>
         <apollo:thingsToCount>vaccinations</apollo:thingsToCount>
-        <apollo:temporalGranularity>eachSimulatorTimeStep</apollo:temporalGranularity>
+        <apollo:temporalGranularity>eachSimulationTimestep</apollo:temporalGranularity>
         <apollo:spatialGranularity>none</apollo:spatialGranularity>
     </apollo:SimulatorCountOutputSpecification>
 </apollo:SimulatorCountOutputSpecificationListElement>

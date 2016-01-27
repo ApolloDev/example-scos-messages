@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- User Request #3 Show me number of bed nets deployed over time.-->
-<apollo:SimulatorCountOutputSpecificationListElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd" xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
+<apollo:SimulatorCountOutputSpecificationListElement 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd" 
+    xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
     <apollo:SimulatorCountOutputSpecification>
         <!-- ISSUE: No way to express Bed Nets?" -->
         <apollo:thingsToCount>Bed Nets</apollo:thingsToCount>

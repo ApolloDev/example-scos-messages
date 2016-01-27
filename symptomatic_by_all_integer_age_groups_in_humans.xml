@@ -6,7 +6,7 @@
 	xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
 	<apollo:SimulatorCountOutputSpecification>
 		<apollo:speciesToCount>9609</apollo:speciesToCount>
-		<apollo:temporalGranularity>eachSimulationTimestep</apollo:temporalGranularity>
+		<apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
 		<apollo:spatialGranularity>none</apollo:spatialGranularity>
 		<apollo:diseaseOutcome>symptomatic</apollo:diseaseOutcome>
 		<apollo:otherVariables>
