@@ -9,13 +9,9 @@
         <apollo:speciesToCount>9606</apollo:speciesToCount>
         <apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
         <apollo:spatialGranularity>none</apollo:spatialGranularity>
-        <apollo:infectionState>susceptible</apollo:infectionState>
-        <apollo:infectionState>latent</apollo:infectionState>
-        <apollo:infectionState>infectious</apollo:infectionState>
-        <apollo:infectionState>recovered</apollo:infectionState>
-        <apollo:infectionState>newly_sick</apollo:infectionState>
+        <apollo:infectionState>newly_exposed</apollo:infectionState>
         <apollo:otherVariables>
-            <apollo:variable>measuredQuantityRange</apollo:variable>
+            <apollo:variable>householdMedianIncome</apollo:variable>
             <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
                 <apollo:unitOfMeasure>dollars</apollo:unitOfMeasure>
                 <apollo:lowerBound>
@@ -51,7 +47,7 @@
         <apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
         <apollo:spatialGranularity>none</apollo:spatialGranularity>
         <apollo:otherVariables>
-            <apollo:variable>measuredQuantityRange</apollo:variable>
+            <apollo:variable>householdMedianIncome</apollo:variable>
             <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
                 <apollo:unitOfMeasure>dollars</apollo:unitOfMeasure>
                 <apollo:lowerBound>
