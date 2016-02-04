@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns:tns="http://types.apollo.pitt.edu/v3_1_0/" xmlns="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="http://types.apollo.pitt.edu/v3_1_0/"
+<schema xmlns:tns="http://types.apollo.pitt.edu/v4_0/" xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://types.apollo.pitt.edu/v4_0/"
 	elementFormDefault="qualified">
 	<simpleType name="Probability">
 		<restriction base="double">
@@ -1422,6 +1422,17 @@
 				minOccurs="0" />
 		</sequence>
 	</complexType>
+	
+	<complexType name="SimulatorCountOutputSpecificationList">
+	<sequence>
+		<element name="SimulatorCountOutputSpecification" type="tns:SimulatorCountOutputSpecification" minOccurs="1" maxOccurs="unbounded"></element>
+	</sequence>
+	</complexType>
+	
+	
+	<element name="SimulatorCountOutputSpecificationListElement" type="tns:SimulatorCountOutputSpecificationList">
+		
+	</element>
 
 
 	<complexType name="SimulatorCountOutput">
