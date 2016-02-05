@@ -10,6 +10,6 @@
         <apollo:speciesToCount>9609</apollo:speciesToCount>
         <apollo:temporalGranularity>eachSimulationTimestep</apollo:temporalGranularity>
         <apollo:spatialGranularity>admin2</apollo:spatialGranularity>
-        <apollo:diseaseOutcome>symptomatic</apollo:diseaseOutcome>
+        <apollo:diseaseOutcomes>symptomatic</apollo:diseaseOutcomes>
     </apollo:SimulatorCountOutputSpecification>
 </apollo:SimulatorCountOutputSpecificationListElement>

@@ -8,7 +8,7 @@
 		<apollo:speciesToCount>9609</apollo:speciesToCount>
 		<apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
 		<apollo:spatialGranularity>none</apollo:spatialGranularity>
-		<apollo:diseaseOutcome>symptomatic</apollo:diseaseOutcome>
+		<apollo:diseaseOutcomes>symptomatic</apollo:diseaseOutcomes>
 		<apollo:otherVariables>
 			<apollo:variable>measuredQuantityRange</apollo:variable>
 			<apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">

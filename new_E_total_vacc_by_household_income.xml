@@ -13,7 +13,7 @@
         <apollo:speciesToCount>9606</apollo:speciesToCount>
         <apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
         <apollo:spatialGranularity>none</apollo:spatialGranularity>
-        <apollo:infectionState>newly_sick</apollo:infectionState>
+        <apollo:infectionStates>newly_sick</apollo:infectionStates>
         <apollo:otherVariables>
             <apollo:variable>householdMedianIncome</apollo:variable>
             <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">

@@ -7,6 +7,6 @@
         <apollo:speciesToCount>9606</apollo:speciesToCount>
         <apollo:temporalGranularity>eachSimulationTimestep</apollo:temporalGranularity>
         <apollo:spatialGranularity>admin1</apollo:spatialGranularity>
-        <apollo:infectionState>latent</apollo:infectionState>
+        <apollo:infectionStates>latent</apollo:infectionStates>
     </apollo:SimulatorCountOutputSpecification>
 </apollo:SimulatorCountOutputSpecificationListElement>

@@ -10,13 +10,13 @@
         <apollo:speciesToCount>9609</apollo:speciesToCount>
         <apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
         <apollo:spatialGranularity>none</apollo:spatialGranularity>
-        <apollo:diseaseOutcome>death</apollo:diseaseOutcome>
+        <apollo:diseaseOutcomes>death</apollo:diseaseOutcomes>
     </apollo:SimulatorCountOutputSpecification>
     <!-- output request 2 -->
     <apollo:SimulatorCountOutputSpecification>
         <apollo:speciesToCount>9609</apollo:speciesToCount>
         <apollo:temporalGranularity>entireSimulation</apollo:temporalGranularity>
         <apollo:spatialGranularity>none</apollo:spatialGranularity>
-        <apollo:infectionState>latent</apollo:infectionState>
+        <apollo:infectionStates>latent</apollo:infectionStates>
     </apollo:SimulatorCountOutputSpecification>
 </apollo:SimulatorCountOutputSpecificationListElement>

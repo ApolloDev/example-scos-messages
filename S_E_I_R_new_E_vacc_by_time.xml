@@ -20,11 +20,11 @@
         <apollo:speciesToCount>9606</apollo:speciesToCount>
         <apollo:temporalGranularity>eachSimulationTimestep</apollo:temporalGranularity>
         <apollo:spatialGranularity>none</apollo:spatialGranularity>
-        <apollo:infectionState>susceptible</apollo:infectionState>
-        <apollo:infectionState>latent</apollo:infectionState>
-        <apollo:infectionState>infectious</apollo:infectionState>
-        <apollo:infectionState>recovered</apollo:infectionState>
-        <apollo:infectionState>newly_sick</apollo:infectionState>
+        <apollo:infectionStates>susceptible</apollo:infectionStates>
+        <apollo:infectionStates>latent</apollo:infectionStates>
+        <apollo:infectionStates>infectious</apollo:infectionStates>
+        <apollo:infectionStates>recovered</apollo:infectionStates>
+        <apollo:infectionStates>newly_sick</apollo:infectionStates>
     </apollo:SimulatorCountOutputSpecification>
     <!-- Message 2, getting vaccine counts -->
     <apollo:SimulatorCountOutputSpecification>

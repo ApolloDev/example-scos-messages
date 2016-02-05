@@ -3,10 +3,10 @@
 <!-- Show me number of symptomatic cases by the following age groups: < 1, 1-5, 6-18, 19-64, > 65, for humans. -->
 <apollo:SimulatorCountOutputSpecificationListElement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://types.apollo.pitt.edu/v4_0/ apollo_types_4.0.xsd" xmlns:apollo="http://types.apollo.pitt.edu/v4_0/">
     <apollo:SimulatorCountOutputSpecification>
-        <apollo:speciesToCount>9609</apollo:speciesToCount>
+        <apollo:speciesToCount>9606</apollo:speciesToCount>
         <apollo:temporalGranularity>eachSimulationTimestep</apollo:temporalGranularity>
         <apollo:spatialGranularity>none</apollo:spatialGranularity>
-        <apollo:infectionState>infectious</apollo:infectionState>
+        <apollo:infectionStates>infectious</apollo:infectionStates>
         <apollo:otherVariables>
             <apollo:variable>ageRange</apollo:variable>
             <apollo:categories xsi:type="apollo:MeasuredQuantityRangeCategoryDefinition">
